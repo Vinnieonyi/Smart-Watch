@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://kit.fontawesome.com/83a3b97009.js"></script>
+</head>
+<body>
+    <section class="home" id="home">
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+                <span>Avensify</span>
+            </div>
+            <input type="checkbox" id="menu-toggler">
+            <label for="menu-toggler" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#products"><i class="fa-solid fa-clone"></i>Our Products</a></li>
+                <li><a href="#contact us"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+                <li><a href="#about us"><i class="fa-solid fa-users"></i>About Us</a></li>
+                <button class="button" id="form-open">Login</button>
+            </ul> 
+        </nav>
+        <div class="content">
+            <h1 class="slide-left">The <br>Future</h1>
+            <p class="slide-left">Welcome to Avensify. We make a huge collection of smart watches at affordable prices for our clients </p>
+            <div class="links slide-left">
+                <a href="#products" class="btn">Learn More</a>
+                <a href="#contact us">Or Contact Us</a>
+            </div>
+        </div> 
+         <div class="formbox">
+            <i class="fa-solid fa-xmark form_close"></i>
+           <div class="login-form">
+                <form action="login.php" method="POST">
+                  <h2>Log in</h2>
+                  <div class="input-box">
+                    <label for="Username"></label>
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" name="username" placeholder="Enter your Username">
+                   </div>
+                    <div class="input-box">
+                        <label for="Password"></label>
+                        <input type="password" name="password" placeholder="Enter your password">
+                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-regular fa-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="option-field">
+                      <span class="checkbox">
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember me</label>
+                      </span>  
+                     <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+                    <button class="button">Login Now</button>
+                    <div class="login_signup">Don't have an account? <a href="#" id="signup">Sign up</a></div>
+              </form>
+            </div>
+
+            <!--Sign Up-->
+            <div class="signup_form">
+                <form action="registration.php" method="post">
+                  <h2>Sign Up</h2>
+                  <div class="input-box">
+                    <label for="Username"></label>
+                    <i class="fa-regular fa-user"></i>
+                     <input type="text" name="username" placeholder="Enter your Username" >
+                   </div>
+                    <div class="input-box">
+                        <label for="Password"></label>
+                        <input type="password" placeholder="Create your password" name="password">
+                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-regular fa-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="Confirm Password"></label>
+                        <input type="password" placeholder="Confirm your password" name="confirm_password">
+                        <i class="fa-solid fa-lock"></i>
+                        <i class="fa-regular fa-eye-slash pw_hide"></i>
+                    </div>
+                             <input type="submit" class="button" value="Register">
+                    
+                    <div class="login_signup">Already have an account? <a href="#" id="login">Log in</a></div>
+              </form>
+            </div>
+            
+
+
+        </section>
+
+    <!-- Our Products start-->
+    <section class="Products" id="products">
+        <div class="hero">
+            <div class="section-title">
+                <h2>Our Products</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quo natus beatae ducimus? Iure, obcaecati?</p>
+            </div>
+
+            <ul class="cards">
+                <li class="card">
+                    <img src="pic 2.png.webp">
+                    <h3>Apple watch</h3>
+                    <p>A watch that satisfies your needs.</p>
+                </li>
+                <li class="card">
+                    <img src="image 6.png">
+                    <h3>Apple watch</h3>
+                    <p>A watch that satisfies your needs.</p>
+                </li>
+                <li class="card">
+                    <img src="image 5.jpg">
+                    <h3>Apple watch</h3>
+                    <p>A watch that satisfies your needs.</p>
+                </li>
+                <li class="card">
+                    <img src="image 3.jpg">
+                    <h3>Apple watch</h3>
+                    <p>A watch that satisfies your needs.</p>
+                </li>
+                <li class="card">
+                    <img src="watchplate-1.jpg">
+                    <h3>Apple watch</h3>
+                    <p>A watch that satisfies your needs.</p>
+                </li>
+                <li class="card">
+                    <img src="Pic 4.png.jpg">
+                    <h3>Apple watch</h3>
+                    <p>A watch that satisfies your needs.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--products end-->
+
+    <!--About us start-->
+    <section class="About" id="about us">
+        <div class="hero">
+            <div class="section-title">
+                <h2>About Us</h2><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure atque ipsum, doloribus quisquam dignissimos deserunt.</p>
+            </div>
+
+            <div class="row">
+                <h2>Our Story</h2><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure atque ipsum, doloribus quisquam dignissimos deserunt.</p><br>
+                <h2>Our Vision</h2><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure atque ipsum, doloribus quisquam dignissimos deserunt.</p>
+            </div>
+            <div class="row team">
+                <h2>Our Team</h2><br>
+                <ul>
+                    <li>John Mbeere-Chief Executive Officer</li><br>
+                    <li>Vincent Onyango-Manager</li><br>
+                    <li>Declan Obadiah-Assistant Manager</li><br>
+                    <li>Grace Wanjiru-Receptionist</li><br>
+                    <li>Patricia Wanjau-Our Social media manager</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--About us end-->
+
+    <!--contact us start-->
+    <section class="Contact" id="contact us">
+        <div class="hero">
+            <div class="section-title">
+                <h2>Contact Us</h2><br>
+                <p> You can reach out to us through our social media platforms below;</p>
+            </div>
+
+            <div class="contactdetails">
+                <p><i class="fa-solid fa-location-dot"></i>Buruburu phase I, Mumias South Road</p>
+                <p><i class="fa-solid fa-envelope"></i>blabla@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(123) 456-7890</p>
+                <p><i class="fa-brands fa-facebook"></i>Avensify</p>
+                <p><i class="fa-brands fa-twitter"></i>Avensify</p>
+                <p><i class="fa-brands fa-instagram"></i>Avensify</p>
+                <p><i class="fa-solid fa-clock"></i>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p><i class="fa-solid fa-clock"></i>Saturday: 10:00 AM - 12:00 PM</p>
+                <p><i class="fa-solid fa-clock"></i>Sunday: closed</p>
+                <p><i class="fa-sharp fa-solid fa-globe"></i>www.Avensify.com</p>
+            </div>
+
+                    <div class="section-title">
+                        <h2>Inquiries</h2><br>
+                    </div>
+            <div class="colform">
+                <form action="#">
+                    <input type="text" placeholder="Name*"><br><br>
+                    <input type="E-mail" placeholder="E-mail*"><br><br>
+                    <textarea placeholder="Message*" id="" cols="40" rows="20"></textarea><br><br>
+                    <button id="submit" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <div class="footer">
+        <span>Copyright © 2023 Avensify | All Rights reserved Home Contact</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
